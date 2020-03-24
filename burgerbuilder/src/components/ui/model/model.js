@@ -5,7 +5,7 @@ import Backdrop from '../backdrop/backdrop'
 
 class Model extends Component{
     shouldComponentUpdate(nextprops,nextstate){
-           return nextprops.show!==this.props.show
+           return nextprops.show!==this.props.show || nextprops.children!==this.props.children;
     }
   render(){
     return(
